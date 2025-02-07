@@ -1,0 +1,203 @@
+/* ========== Global Styles ========== */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 60px;
+}
+
+/* ========== Sidebar Styles ========== */
+.sidebar {
+    background: #1a1a1a;
+    padding: 25px;
+    height: 100vh;
+    width: 280px;
+    position: fixed;
+    box-shadow: 3px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h3 {
+    color: #ffd700;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.sidebar ul li a:hover {
+    background: #ffd700;
+    color: #1a1a1a;
+    transform: translateX(10px);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+/* ========== Main Content Styles ========== */
+.main-content {
+    margin-left: 300px;
+    padding: 30px;
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
+    color: #2c3e50;
+    text-align: center;
+    margin: 40px 0;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #3498db;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+/* ========== Product Cards ========== */
+.product-card {
+    border-radius: 15px;
+    background: white;
+    transition: all 0.3s ease;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.product-image-link {
+    display: block;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    padding: 15px;
+    background: #f8f9fa;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.price-section {
+    margin: 15px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #e74c3c;
+    font-size: 1rem;
+}
+
+.discounted-price {
+    color: #27ae60;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* ========== Button Group ========== */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-add-to-cart, .btn-remove-from-cart {
+    flex: 1;
+    min-width: 120px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-add-to-cart {
+    background: #27ae60;
+    color: white;
+}
+
+.btn-remove-from-cart {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn-add-to-cart:hover, .btn-remove-from-cart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== Discount Display ========== */
+.discount-display {
+    background: #f8f9fa;
+    border-radius: 6px;
+    padding: 8px 12px;
+    text-align: center;
+    border: 1px solid #eee;
+    min-width: 80px;
+}
+
+.discount-percent {
+    color: #3498db;
+    font-size: 0.9rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+    
+    .button-group {
+        flex-wrap: wrap;
+    }
+    
+    .btn-add-to-cart, .btn-remove-from-cart {
+        flex: 100%;
+    }
+    
+    .discount-display {
+        margin-left: 0;
+        width: 100%;
+    }
+}

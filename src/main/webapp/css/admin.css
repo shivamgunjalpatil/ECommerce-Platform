@@ -1,0 +1,127 @@
+/* Admin Dashboard Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    height: 100vh;
+    background: #343a40;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar a:hover {
+    background: #f1c40f;
+    color: #343a40;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(135deg, #ff6f00, #ffcc00);
+    background: linear-gradient(135deg, #ff6f00, #ffcc00);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-header {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.card:hover {
+    background-color: #f1c40f;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .card-icon {
+    color: #343a40;
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: #6a11cb;
+    transition: color 0.3s ease;
+}
+
+.text-center {
+    color: white;
+}
+
+button.btn:hover {
+    background: #ffcc00;
+    color: #343a40;
+    transform: scale(1.05);
+    transition: background 0.3s, transform 0.3s;
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .card {
+        width: 90%;
+        margin-top: 20px;
+    }
+}

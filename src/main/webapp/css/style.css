@@ -1,0 +1,182 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    padding-top: 60px; /* Adjust for fixed navbar height */
+}
+
+/* Navbar Styling - Fixed at Top */
+.navbar {
+    background-color: #343a40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navbar .navbar-brand, .navbar a {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/* Navbar hover effect for 'Register' link only */
+.navbar a#register:hover {
+    color: #000000; /* Black color on hover for 'Register' link */
+}
+
+/* Navbar hover effect for other links (yellow hover) */
+.navbar a:hover {
+    color: #ffc107; /* Yellow color on hover for other navbar links */
+}
+
+/* Navbar button styling (Yellow) */
+.navbar .btn-warning {
+    background-color: #ffc107; /* Yellow color */
+    border-color: #ffc107;
+    color: #ffffff;
+}
+
+.navbar .btn-warning:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    border-color: #e0a800;
+}
+
+/* ---------------------------------------- */
+/* Register Page Styles */
+/* ---------------------------------------- */
+.register-container {
+    width: 100%;
+    max-width: 450px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h3 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Register Form Input Field Styles */
+.register-container .form-control {
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+.register-container textarea.form-control {
+    resize: vertical;
+}
+
+/* Register Buttons (Blue color for Register Button) */
+.register-container .btn {
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.register-container .btn-primary {
+    background-color: #007bff; /* Blue color */
+    border-color: #007bff;
+}
+
+.register-container .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3;
+}
+
+.register-container .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.register-container .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #5a6268;
+}
+
+/* Register Links */
+.register-container .text-center a {
+    color: #007bff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.register-container .text-center a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------------------------- */
+/* Login Page Styles */
+/* ---------------------------------------- */
+.card {
+    width: 100%;
+    max-width: 450px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card-title {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Login Form Input Field Styles */
+.card .form-control {
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+/* Login Buttons (Blue color for Login Button) */
+.card .btn {
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn-primary {
+    background-color: #007bff; /* Blue color */
+    border-color: #007bff;
+}
+
+.card .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3;
+}
+
+.card .d-grid .btn {
+    margin-top: 10px;
+}
+
+/* Login Links */
+.card .text-center a {
+    color: #007bff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.card .text-center a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------------------------- */
+/* Admin Dashboard Styles */
+/* ---------------------------------------- */
