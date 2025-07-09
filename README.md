@@ -29,6 +29,7 @@ Designed with a clean backend architecture and deployed on **AWS EC2**, this pro
 ---
 
 ## 📂 Project Structure
+
 ECommerce/
 ├── src/
 │ ├── com.dao/
@@ -43,15 +44,16 @@ ECommerce/
 └── hibernate.cfg.xml
 
 💡 Key Concepts Learned
-MVC Architecture using JSP & Servlets
 
-Hibernate CRUD operations
+1. MVC Architecture using JSP & Servlets
 
-Session handling & authentication logic
+2. Hibernate CRUD operations
 
-Role-based access (admin vs user)
+3. Session handling & authentication logic
 
-Deployment on AWS EC2
+4. Role-based access (admin vs user)
+
+5. Deployment on AWS EC2
 
 
 
