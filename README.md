@@ -30,28 +30,17 @@ Designed with a clean backend architecture and deployed on **AWS EC2**, this pro
 
 ## 📂 Project Structure
 
-ECommerce/
-
+ECommerce
 ├── src/
-
 │ ├── com.dao/
-
 │ ├── com.entities/
-
 │ ├── com.servlets/
-
 │ └── com.helper/
-
 ├── WebContent/
-
 │ ├── CSS/
-
 │ ├── JS/
-
 │ ├── Images/
-
 │ └── JSP Pages
-
 └── hibernate.cfg.xml
 
 
