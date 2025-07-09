@@ -29,4 +29,36 @@ Designed with a clean backend architecture and deployed on **AWS EC2**, this pro
 ---
 
 ## 📂 Project Structure
+ECommerce/
+├── src/
+│ ├── com.dao/
+│ ├── com.entities/
+│ ├── com.servlets/
+│ └── com.helper/
+├── WebContent/
+│ ├── CSS/
+│ ├── JS/
+│ ├── Images/
+│ └── JSP Pages
+└── hibernate.cfg.xml
+
+💡 Key Concepts Learned
+MVC Architecture using JSP & Servlets
+
+Hibernate CRUD operations
+
+Session handling & authentication logic
+
+Role-based access (admin vs user)
+
+Deployment on AWS EC2
+
+
+
+🙋‍♂️ Author
+Shivam — Computer Engineering Graduate | Passionate Java Developer
+📧 Reach out on LinkedIn
+http://linkedin.com/in/shivamgunjal
+
+
 
